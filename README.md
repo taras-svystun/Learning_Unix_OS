@@ -8,7 +8,7 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 4. ```who am i```
 5. CTRL + U -- erases the whole input line.
 6. CTRL + D -- kills the current process or even terminal. The same as ```exit```.
-
+7. `man` command allows to print the docs for any input command.
 
 # Chapter 3. The Unix Filesystem
 
@@ -40,3 +40,33 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 
 8. ```rm``` -- to remove. Easy mistakes are either ```rm *``` will remove all files from the working_dir or ```rm c *``` (accidential space between "c" and "\*") will remove all files named c and ALL files.
 9. ```pr -t``` -- ptint file contents without headers and/or margins. Same as ```cat```.
+
+
+# Chapter 5. Redirecting I/O
+
+1. `< file` to give a file for program standrd input.
+   - E.g. `mail abc@abs.com < to_do`
+
+2. `>` operator if the program writes to its standard output you can make it write to a file.
+
+   - E.g. `ls > ls_res` will write the result of `ls` command inside the "ls_res" file.
+   - or such usage is possible: `cat > to_do` then write all you need, followed by ^D. Your writings are saved into "to_do" file.
+
+3. `|` -- to send the output of one program to the input of another.
+
+   - `ls -l | grep 'Aug'` -- to print all names that contain 'Aug'.
+   - `-c` -- print only count of files.
+   - `-i` -- ihnore case.
+   - `-n` -- include numbering.
+   - `-v` -- select those lines which do not match the pattern.
+
+4. `>>` same as `>` but not overwrites, but appends to existing file contents.
+   - from 2. `cat >> to_do` input say "Drink a cup of water" followed by ^D.
+
+5. `sort` sorts the contents of a file (not changing the original file).
+   - `-n` -- sort numerically.
+   - `-r` -- reverse ordering.
+   - `-f` -- sort upper and lower case together.
+   - `+x` -- ignore first x fields when sorting.
+
+6. `ls -l | grep '4' | sort +4n` -- this command will print only files, which names contain '4' and then sort numerically by size (skips first 4 fields). Or add `| less` to recieve the output in a page format.
