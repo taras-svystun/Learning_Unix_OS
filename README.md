@@ -30,7 +30,7 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 6. ```mv``` command to move or rename files.
 7. ```find``` command to find.
    * ```-delete``` -- to delete found files.
-      * ```-group``` -- find only files from group names.
+   * ```-group``` -- find only files from group names.
    * ```-maxdepth```, ```-mindepth``` -- depth of the search.
    * ```-name```, ```-iname``` -- name of the file in quoting marks. Allow for wildcards.
    * ```-print```
