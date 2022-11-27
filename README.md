@@ -2,8 +2,8 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 
 # Chapter 1. Getting started
 
-1. ```date```
-2. ```w```
+1. `date`
+2. `w`
 3. ```who```
 4. ```who am i```
 5. CTRL + U -- erases the whole input line.
@@ -29,14 +29,14 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 5. Be carefull with the ```cp -r``` command. If you will copy dir into itself, the process will last forever, until the lack of memory.
 6. ```mv``` command to move or rename files.
 7. ```find``` command to find.
-* ```-delete``` -- to delete found files.
-* ```-group``` -- find only files from group names.
-* ```-maxdepth```, ```-mindepth``` -- depth of the search.
-* ```-name```, ```-iname``` -- name of the file in quoting marks. Allow for wildcards.
-* ```-print```
-* ```-type``` -- type of file. ```b```lock, ```c```haracter_special, ```d```irectory, ```f```ile, ```l```ink, ```p```, ```s```ocket.
-* ```-user uname``` -- finds only files that belong to uname.
-* ```\!``` -- to negate. Like ```find / \! -name "*.c" -print``` -- Print out a list of all the files whose names do not end in .c.
+   * ```-delete``` -- to delete found files.
+      * ```-group``` -- find only files from group names.
+   * ```-maxdepth```, ```-mindepth``` -- depth of the search.
+   * ```-name```, ```-iname``` -- name of the file in quoting marks. Allow for wildcards.
+   * ```-print```
+   * ```-type``` -- type of file. ```b```lock, ```c```haracter_special, ```d```irectory, ```f```ile, ```l```ink, ```p```, ```s```ocket.
+   * ```-user uname``` -- finds only files that belong to uname.
+   * ```\!``` -- to negate. Like ```find / \! -name "*.c" -print``` -- Print out a list of all the files whose names do not end in .c.
 
 8. ```rm``` -- to remove. Easy mistakes are either ```rm *``` will remove all files from the working_dir or ```rm c *``` (accidential space between "c" and "\*") will remove all files named c and ALL files.
 9. ```pr -t``` -- ptint file contents without headers and/or margins. Same as ```cat```.
