@@ -17,7 +17,19 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 3. ```ls -R``` -- to print recorsively all subdirectories.
 4. ```ls --color``` -- to print dirs and files in different colors.
 5. ```less *filename*``` -- to see one-page of the file contents.
-6. ```chmod *ugo* +-= *rwx*``` -- change the permissions of the file.
+6. `chmod (1) (2) (3) -- change the permissions of the file.
+   - (1) which permission you want to change
+     - `u` -- user.
+     - `g` -- group.
+     - `o` -- others.
+   - (2) whether to
+     - `+` -- add the permission.
+     - `-` -- delete the permission.
+     - `=` -- specify it exactly.
+   - (3) what permissions you want to affect
+     - `r` -- read.
+     - `w` -- write.
+     - `x` -- execute.
 
 
 # Chapter 4. File management
