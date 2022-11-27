@@ -55,18 +55,20 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 3. `|` -- to send the output of one program to the input of another.
 
    - `ls -l | grep 'Aug'` -- to print all names that contain 'Aug'.
+  
+4. `grep` command.
    - `-c` -- print only count of files.
    - `-i` -- ihnore case.
    - `-n` -- include numbering.
    - `-v` -- select those lines which do not match the pattern.
 
-4. `>>` same as `>` but not overwrites, but appends to existing file contents.
+5. `>>` same as `>` but not overwrites, but appends to existing file contents.
    - from 2. `cat >> to_do` input say "Drink a cup of water" followed by ^D.
 
-5. `sort` sorts the contents of a file (not changing the original file).
+6. `sort` sorts the contents of a file (not changing the original file).
    - `-n` -- sort numerically.
    - `-r` -- reverse ordering.
    - `-f` -- sort upper and lower case together.
    - `+x` -- ignore first x fields when sorting.
 
-6. `ls -l | grep '4' | sort +4n` -- this command will print only files, which names contain '4' and then sort numerically by size (skips first 4 fields). Or add `| less` to recieve the output in a page format.
+7. `ls -l | grep '4' | sort +4n` -- this command will print only files, which names contain '4' and then sort numerically by size (skips first 4 fields). Or add `| less` to recieve the output in a page format.
