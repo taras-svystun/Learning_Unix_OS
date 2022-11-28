@@ -84,3 +84,10 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
    - `+x` -- ignore first x fields when sorting.
 
 7. `ls -l | grep '4' | sort +4n` -- this command will print only files, which names contain '4' and then sort numerically by size (skips first 4 fields). Or add `| less` to recieve the output in a page format.
+
+# Chapter 6. Using the Interner and Other Networks
+
+1. `ssh` command to connect to remote computer a.k.a "remote login". More info about that in *The secure shell*, by D. J. Barrett and R. Silverman.
+2. `rsh` kind of the same command to `ssh`.
+3. `scp` -- secure copy of files between hosts on a network.
+4. `talk` command allows for two users to communicate. To do that one need to know their hostname (`hostname` command). 
