@@ -99,9 +99,10 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 1. Use `bg` to run some commands on a background. For instance:
 
 ```
-sort hugefile1 hugefile2 > sorted
-^Z
-bg
+$ sort hugefile1 hugefile2 > sorted
+  ...
+  ^Z
+$ bg
 ```
 2. `ps` allows to list all processes on a machine. The output contains: "PID" unique process ID, "TTY" terminal name, "TIME" computer time, "CMD" the name of the process.
 3. `tty` -- to get name of your current terminal.
