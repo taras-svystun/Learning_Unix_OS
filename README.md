@@ -9,6 +9,7 @@ This the summary of the book "Learning the Unix Operating System" 5th edition by
 5. CTRL + U -- erases the whole input line.
 6. CTRL + D -- kills the current process or even terminal. The same as ```exit```.
 7. `man` command allows to print the docs for any input command.
+8. `info` command similar to `man`.
 
 # Chapter 3. The Unix Filesystem
 
